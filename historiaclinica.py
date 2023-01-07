@@ -3,7 +3,7 @@ import os
 class hclinica:
     ID = 0
     def __init__(self, nom,apaterno,amaterno,ced,fechanacimiento,edad,antecedentes,email,tel):
-        hclinica.ID += 0
+        hclinica.ID += 1
         self.nom = nom
         self.apellidopaterno = apaterno
         self.apellidomaterno = amaterno
@@ -34,3 +34,5 @@ class hclinica:
 os.system("cls")
 pac = hclinica("Anthony","Lopez","Martinez","0953758901","02/01/2003","20","Alergias, Varicela","alopezm@gmail.com","0962745197")
 pac.mostrarhclinica()
+pac3 = hclinica("Anthony","Lopez","Martinez","0953758901","02/01/2003","20","Alergias, Varicela","alopezm@gmail.com","0962745197")
+pac3.mostrarhclinica()
